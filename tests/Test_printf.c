@@ -19,8 +19,8 @@ void redirect_all_std(void)
 
 Test(my_printf, simple_tests, .init = redirect_all_std)
 {
-	my_printf("Hello ta MERE");
-	cr_assert_stdout_eq_str("Hello ta MERE");
+	my_printf("Hello");
+	cr_assert_stdout_eq_str("Hello");
 }
 
 Test(my_printf, disp_int, .init = redirect_all_std)
